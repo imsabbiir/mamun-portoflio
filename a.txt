@@ -1,0 +1,36 @@
+<div className="w-[85%] mx-auto mt-20">
+        <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">
+          Services <span className="text-[#faa811]">I Provide</span>
+        </h3>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {[
+            {
+              title: "SEO & Content Marketing",
+              desc: "Optimize websites for search engines and create high-ranking content.",
+            },
+            {
+              title: "Social Media Marketing",
+              desc: "Build and engage your audience with strategic campaigns.",
+            },
+            {
+              title: "Paid Advertising (PPC)",
+              desc: "Manage high-ROI ad campaigns on Google & social platforms.",
+            },
+          ].map((service, index) => (
+            <div
+              key={index}
+              className="p-6 bg-white dark:bg-[#2c2c38] rounded-2xl shadow hover:shadow-lg transition"
+            >
+              <h4 className="text-xl font-semibold text-[#faa811] mb-2">
+                {service.title}
+              </h4>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">
+                {service.desc}
+              </p>
+              <button className="flex items-center text-sm text-[#faa811] font-medium hover:underline">
+                Learn More 
+              </button>
+            </div>
+          ))}
+        </div>
+      </div>
