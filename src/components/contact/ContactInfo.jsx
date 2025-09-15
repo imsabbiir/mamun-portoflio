@@ -1,10 +1,10 @@
-import { FaAmilia, FaMailBulk, FaMailchimp, FaMapPin, FaPhoneAlt, FaSms, FaVoicemail } from "react-icons/fa";
+import { FaMapPin, FaPhoneAlt } from "react-icons/fa";
 import SubTitle from "../SubTitle";
 import Title from "../Title";
 import { SiGmail } from "react-icons/si";
 export default function ContactInfo() {
   return (
-    <div className="col-span-2">
+    <div className="md:col-span-2">
       <Title title={"Contact Us"} />
       <SubTitle
         firstText="Let’s Talk for"
@@ -13,11 +13,9 @@ export default function ContactInfo() {
         secondItalic={true}
         className="text-4xl"
       />
-
       <p className="text-gray-500 my-6">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos dolorum iusto fugiat voluptates vitae delectus dignissimos amet doloremque! Ad, reiciendis! Repellendus culpa necessitatibus fugiat quibusdam perferendis repellat vitae aliquam dicta.
       </p>
-
       <ul className="space-y-3">
         <div className="flex items-center gap-2">
           <div className="w-7 h-7 rounded-full bg-[#ffa900] flex justify-center items-center"><FaPhoneAlt /></div>
